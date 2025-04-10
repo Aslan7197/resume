@@ -227,7 +227,12 @@ footer {
 
   .about-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Center image */
+    text-align: justify; /* Justify text in container */
+  }
+
+  .about-container p {
+    text-align: justify; /* Justify paragraph */
   }
 
   .profile-photo {
@@ -254,18 +259,4 @@ footer {
   footer {
     font-size: 12px;
   }
-    .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-  }
-
-  .about-container p {
-    text-align: justify;
-  }
-
-  .profile-photo {
-    margin-bottom: 10px;
-  }
 }
-
