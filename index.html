@@ -21,16 +21,19 @@
   </header>
 
   <main>
+    <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <img src="photo.jpg" alt="My Photo" class="profile-photo" />
-        <p>
-          I am a PhD candidate in Software Engineering with a focus on Automated Program Repair techniques. Experienced in conducting research, analyzing data, and developing innovative software solutions. Seeking opportunities to apply my academic knowledge and technical skills in a dynamic research or development environment.
-        </p>
-      </div>
+        <h2>About Me</h2>
+        <div class="about-container">
+          <img src="photo.jpg" alt="My Photo" class="profile-photo" />
+          <p>
+            I am a PhD candidate in Software Engineering with a focus on Automated Program Repair techniques. Experienced in conducting research, analyzing data, and developing innovative software solutions. Seeking opportunities to apply my academic knowledge and technical skills in a dynamic research or development environment.
+         </p>
+        </div>
     </section>
 
+    <section class="skills-languages-container">    
+    <!-- Skills Section -->
     <section class="skills-languages-container">
       <section id="skills">
         <h2>Skills</h2>
@@ -41,80 +44,115 @@
           <li><strong>Tools & Platforms:</strong> Git, Docker, Linux, VSCode, Jupyter, Hugging Face, OpenAI APIs, FAISS</li>
         </ul>
       </section>
-
-      <section id="languages">
-        <h2>Languages</h2>
-        <div class="language">
-          <span><strong>English</strong> – Fluent</span>
-          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="language">
+        <span><strong>English</strong>– Fluent</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div> 
         </div>
-        <div class="language">
-          <span><strong>Russian</strong> – Intermediate</span>
-          <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+      <div class="language">
+        <span><strong>Korean</strong> – Basic</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 40%;"></div> 
         </div>
-        <div class="language">
-          <span><strong>Korean</strong> – Basic</span>
-          <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+      </div>
+      <div class="language">
+        <span><strong>Russian</strong> – Intermediate</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div> 
         </div>
-        <div class="language">
-          <span><strong>Uzbek</strong> – Native</span>
-          <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+      </div>
+      <div class="language">
+        <span><strong>Uzbek</strong> – Native</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 100%;"></div> 
         </div>
-      </section>
+      </div>
     </section>
+  </section>
 
-    <section id="education">
+    <section id="education" style="margin-left: 20px;">
       <h2>Education</h2>
       <ul>
         <li>
           Ph.D. in Software Engineering – 
-          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a> <span class="year">(2024–Present)</span>
-          <p><strong>Research focus:</strong> Developing an Automated Program Repair tool leveraging Large Language Models (LLMs) to reduce debugging time and cost</p>
+          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul </a> <span class="year">(2024-PRESENT)</span>
+          <p style="margin-bottom: 6px;"><strong>Research focus:</strong> Generating Automated Program Repair tool by leveraging LLM and reducing debugging time</p>
         </li>
         <li>
-          M.Sc. in Software Engineering – 
-          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a> <span class="year">(2022–2024)</span>
+          M.Sc. in Computer Science – 
+          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a> <span class="year">(2022-2024)</span>
+          <p style="margin-bottom: 6px;"><strong>Thesis: </strong> Enhancing Automatic Program Repair by Leveraging Pattern Approach and Patch Modeling</p>
         </li>
         <li>
-          B.Sc. in Information Technology – 
-          <a href="https://nuu.uz/en/" target="_blank">National University of Uzbekistan</a> <span class="year">(2016–2020)</span>
+          B.Sc. in Computer Science – 
+          <a href="https://nuu.uz/en/" target="_blank">National University of Uzbekistan</a> <span class="year">(2016-2020)</span>
+          <p style="margin-bottom: 6px;"><strong>Major:</strong> Programmer-Engineer</p>
         </li>
       </ul>
     </section>
-
+  
+    
     <section id="research-experience">
       <h2>Research Experience</h2>
       <div class="experience">
-        <h3>2022 – Present</h3>
+        <h3>2022 - PRESENT</h3>
         <p><strong>Student Internship | Student Researcher</strong></p>
         <p>Software Engineering Laboratory, Graduate School of University of Seoul</p>
-        <ul>
-          <li>Developed multiple APR frameworks using NMT and LLMs (CodeBERT, GPT)</li>
-          <li>Designed multi-stage repair pipelines with CodeBERT + FAISS for embedding-based context retrieval</li>
-          <li>Applied RAG (Retrieval-Augmented Generation) to enhance fix generation</li>
-          <li>Achieved 37% improvement in repair success rate over baseline models</li>
-          <li>Published 10+ papers in top-tier conferences and journals</li>
+        <p><strong>Project name:</strong> "Deep Learning-Based Automated Software Bugs Repair Study"</p>
+        <p style="border: 4px solid #9a8a8a; padding: 4px; ">Performed various experiments using different research approaches to develop an automated bug repair tool. Developed several APR systems and applied multiple NMT and LLM-based models within these systems. Improved bug-fixing performance by 37%. Published these experiments in over 8 conference and journal papers.</p>
+        
+        <h4>Publications:</h4>
+        <ul class="italic-text">
+          <li>• Abdinabiev Aslan Safarovich, Jisung Kim, and Byungjeong Lee. “An Enhanced Patch Optimization Technique for Multi-Chunk Bugs in Automated Program Repair.” Journal of Information Processing Systems 20, no. 5, pp. 627–39. 2024</li>
+          <li>• Abdinabiev Aslan Safarovich, Jisung Kim, and Byungjeong Lee, "Improving Patch Optimization Quality in Multi-Chunk Program Repair,” KIISE Transactions on Computing Practices, Vol. 30, No. 8, pp. 354-361, 2024</li>
         </ul>
-        <p>See my full publication list: 
-          <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        
+        <p>For more publications by me, please visit: 
+          <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank">
+            Google Scholar Profile
+          </a>
         </p>
       </div>
     </section>
+   
 
-    <section id="contact" style="margin-left: 20px; text-align: center;">
-      <h2>Contact Me</h2>
-      <div class="contact-item"><strong>Email:</strong> <a href="mailto:aslan@uos.ac.kr">aslan@uos.ac.kr</a></div>
-      <div class="contact-item"><strong>Phone Number:</strong> <a href="tel:+821095069707">+82 10-9506-9707</a></div>
-      <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/Aslan7197" target="_blank">Aslan7197</a></div>
-      <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aslan-abdinabiyev-b13965205/" target="_blank">Aslan Abdinabiev</a></div>
-      <div class="contact-item"><strong>Telegram:</strong> <a href="https://t.me/aslan_7197" target="_blank">t.me/aslan_7197</a></div>
-    </section>
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" style="margin-left: 20px; text-align: center;">
+  <h2>Contact Me</h2>
+  <div class="contact-item">
+    <strong>Email:</strong> 
+    <a href="mailto:aslan@uos.ac.kr">aslan@uos.ac.kr</a>
+  </div>
+  <div class="contact-item">
+    <strong>Phone Number:</strong> 
+    <a href="tel:+821095069707">+821095069707</a>
+  </div>
+  <div class="contact-item">
+    <strong>LinkedIn:</strong> 
+    <a href="https://www.linkedin.com/in/aslan-abdinabiyev-b13965205/" target="_blank">Aslan Abdinabiev</a>
+  </div>
+  <div class="contact-item">
+    <strong>GitHub:</strong> 
+    <a href="https://github.com/Aslan7197" target="_blank">Aslan7197</a>
+  </div>
+  <div class="contact-item">
+    <strong>Telegram:</strong> 
+    <a href="https://t.me/aslan_7197" target="_blank">t.me/aslan_7197</a>
+  </div>
+</section>
+
+
   </main>
 
   <footer>
-    <p>© 2025 Aslan Abdinabiev. Thank you for your interest!</p>
+    <p> 2025. Aslan Abdinabiev. Thank you for your interest!</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
