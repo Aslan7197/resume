@@ -390,6 +390,7 @@ section h2 {
 
 .pub-right { flex: 1; }
 .pub-title { font-size: 0.9em; font-weight: bold; color: #1e293b; margin-bottom: 3px; line-height: 1.4; }
+.pub-title-kr { font-size: 0.8em; color: #64748b; margin-bottom: 3px; }
 .pub-venue { font-size: 0.8em; color: #64748b; margin-bottom: 6px; font-style: italic; }
 .pub-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
 .pub-chips span {

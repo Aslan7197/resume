@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xelatex:*)"
+      "Bash(xelatex:*)",
+      "WebFetch(domain:kcse.sigsoft.or.kr)"
     ]
   }
 }
