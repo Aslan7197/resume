@@ -1,2 +1,1 @@
-https://Aslan7197.github.io/portfolio
-
+https://Aslan7197.github.io/resume
