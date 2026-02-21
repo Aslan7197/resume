@@ -3,207 +3,493 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aslan Abdinabiev - Software Engineer</title>
+  <title>Aslan Abdinabiev – Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Aslan Abdinabiev</h1>
-    <p>Software Engineer | PhD Researcher</p>
-    <nav>
+
+  <!-- Sticky Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-name">Aslan Abdinabiev</span>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#research-experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-badge">Open to Opportunities</p>
+        <h1>Aslan Abdinabiev</h1>
+        <p class="hero-role">PhD Researcher &nbsp;·&nbsp; Automated Program Repair &nbsp;·&nbsp; LLMs</p>
+        <p class="hero-desc">
+          Building tools that automatically find and fix software bugs using large language models.
+          Focused on multi-agent repair systems, context-aware patch generation, and fault localization on Defects4J and SWE-Bench.
+        </p>
+        <div class="hero-buttons">
+          <a href="files/Aslan_CV(2026.02.20).pdf" download class="btn btn-primary">Download CV</a>
+          <a href="#projects" class="btn btn-outline">Projects</a>
+          <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank" class="btn btn-outline">Google Scholar</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="photo.jpg" alt="Aslan Abdinabiev" />
+      </div>
+    </div>
+  </section>
 
   <main>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <img src="photo.jpg" alt="Aslan Abdinabiev" class="profile-photo" />
-        <p>
-          PhD candidate building tools that automatically find and fix bugs in code using large language models.
-          My work has improved automated repair success rates by 37% over existing methods.
-          Currently in the thesis stage of my PhD (expected 2027), open to part-time research engineer
-          or research intern positions with interest in transitioning to full-time after graduation.
-        </p>
-      </div>
-    </section>
+    <!-- ── Top row: Education · Skills · Languages ── -->
+    <div class="top-row">
 
-    <!-- Skills & Languages Section -->
-    <section class="skills-languages-container">
+      <section id="education">
+        <h2>Education</h2>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-year">2024 – Now</div>
+            <div class="edu-body">
+              <p class="edu-degree">Ph.D. Software Engineering</p>
+              <p class="edu-school"><a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a></p>
+              <p class="edu-note">Automated Program Repair via LLMs</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2022 – 2024</div>
+            <div class="edu-body">
+              <p class="edu-degree">M.Sc. Software Engineering</p>
+              <p class="edu-school"><a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a></p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2016 – 2020</div>
+            <div class="edu-body">
+              <p class="edu-degree">B.Sc. Information Technology</p>
+              <p class="edu-school"><a href="https://nuu.uz/en/" target="_blank">National University of Uzbekistan</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li><strong>Languages:</strong> Python, Java, SQL, C#, Bash, HTML/CSS</li>
-          <li><strong>AI/ML &amp; LLMs:</strong> CodeBERT, GPT-3/4, CodeLlama, Qwen 2.5 32B, Transformers, TensorFlow, PyTorch, Scikit-learn</li>
-          <li><strong>Techniques:</strong> Fine-tuning, Inference Pipelines, Prompt Engineering, Semantic Search, Embedding-based Retrieval, RAG</li>
-          <li><strong>Tools &amp; Platforms:</strong> Git, Docker, Linux, VSCode, Jupyter, Hugging Face, OpenAI API, FAISS, JavaParser, Defects4J, SWE-Bench</li>
-        </ul>
+        <div class="skill-group">
+          <span class="skill-label">Languages</span>
+          <p>Python · Java · SQL · C# · Bash · HTML/CSS</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">AI / ML</span>
+          <p>CodeBERT · GPT-4o · CodeLlama · Qwen 2.5 32B · Transformers · PyTorch · TensorFlow · Scikit-learn</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Techniques</span>
+          <p>Fine-tuning · RAG · Prompt Engineering · Embedding Retrieval · Multi-Agent Systems · AST Analysis</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Tools</span>
+          <p>Git · Docker · Linux · OpenAI API · FAISS · Hugging Face · JavaParser · Defects4J · SWE-Bench</p>
+        </div>
       </section>
 
       <section id="languages">
         <h2>Languages</h2>
         <div class="language">
-          <span><strong>English</strong> – Advanced (B2-C1)</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-          </div>
+          <div class="lang-row"><span>English</span><span class="lang-level">B2–C1</span></div>
+          <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
         </div>
         <div class="language">
-          <span><strong>Korean</strong> – Elementary (A2)</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 25%;"></div>
-          </div>
+          <div class="lang-row"><span>Russian</span><span class="lang-level">B1</span></div>
+          <div class="progress-bar"><div class="progress" style="width:60%"></div></div>
         </div>
         <div class="language">
-          <span><strong>Russian</strong> – Intermediate (B1)</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 60%;"></div>
-          </div>
+          <div class="lang-row"><span>Korean</span><span class="lang-level">A2</span></div>
+          <div class="progress-bar"><div class="progress" style="width:25%"></div></div>
         </div>
         <div class="language">
-          <span><strong>Uzbek</strong> – Native</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 100%;"></div>
-          </div>
+          <div class="lang-row"><span>Uzbek</span><span class="lang-level">Native</span></div>
+          <div class="progress-bar"><div class="progress" style="width:100%"></div></div>
         </div>
       </section>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul class="edu-list">
-        <li>
-          Ph.D. in Software Engineering –
-          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a>
-          <span class="year">(2024–Present)</span>
-          <p><strong>Research focus:</strong> Automated Program Repair using Large Language Models</p>
-        </li>
-        <li>
-          M.Sc. in Software Engineering –
-          <a href="https://www.uos.ac.kr/main.do" target="_blank">University of Seoul</a>
-          <span class="year">(2022–2024)</span>
-        </li>
-        <li>
-          B.Sc. in Information Technology –
-          <a href="https://nuu.uz/en/" target="_blank">National University of Uzbekistan</a>
-          <span class="year">(2016–2020)</span>
-        </li>
-      </ul>
-    </section>
+    </div><!-- /top-row -->
 
-    <!-- Research Experience Section -->
-    <section id="research-experience">
-      <h2>Research Experience</h2>
-      <div class="experience">
-        <h3>2022 – Present</h3>
-        <p><strong>Student Internship | Student Researcher</strong></p>
-        <p>Software Engineering Laboratory, Graduate School of University of Seoul</p>
-        <ul>
-          <li>Built automated program repair tools using both commercial (GPT-4o) and open-source LLMs (CodeBERT, CodeLlama, Qwen 2.5 32B) with RAG and static analysis</li>
-          <li>Designed agent-based architecture with dynamic context management, fixing 357 Java and 87 Python bugs across Defects4J and SWE-Bench Lite</li>
-          <li>Developed classification-based fault localization achieving 74.6% file-path accuracy on SWE-Bench Lite</li>
-          <li>Published papers at IEEE Access, JIPS, SAC, KCSE, and KSCE</li>
-        </ul>
-        <p>Full publication list:
-          <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>
-        </p>
-      </div>
-    </section>
+    <!-- ── Full-width sections ── -->
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
+        <!-- Research Experience -->
+        <section id="research-experience">
+          <h2>Research Experience</h2>
+          <div class="exp-header">
+            <div>
+              <strong>Student Researcher</strong>
+              <span class="exp-org">— Software Engineering Lab, University of Seoul</span>
+            </div>
+            <span class="exp-date">2022 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built APR tools combining commercial (GPT-4o) and open-source LLMs (CodeBERT, CodeLlama, Qwen 2.5 32B) with RAG and static analysis</li>
+            <li>Designed an agent-based architecture fixing 357 Java bugs (Defects4J) and 87 Python bugs (SWE-Bench Lite)</li>
+            <li>Developed classification-based fault localization: 74.6% file-path accuracy on SWE-Bench Lite, outperforming Agentless and AutoCodeRover</li>
+            <li>Published at JIPS, KIISE, KCC, KSC; co-authored in IEEE Access; paper accepted at ACM SAC 2026</li>
+          </ul>
+        </section>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Agent-Based APR with Dynamic Context</h3>
-          <span class="project-date">2024–Present</span>
-        </div>
-        <p class="project-tags">Python &nbsp;·&nbsp; Java &nbsp;·&nbsp; GPT-4o &nbsp;·&nbsp; CodeBERT &nbsp;·&nbsp; FAISS</p>
-        <p>Multi-agent system (Context Updater, Generator, Overfitting Detector) with dynamic context pool and six static analysis tools for iterative patch refinement. Fixed 357 bugs on Defects4J and 87 on SWE-Bench Lite, outperforming SRepair (+7.5%), ChatRepair, and ThinkRepair.</p>
-        <a href="https://github.com/Aslan7197" target="_blank" class="project-link">View on GitHub &rarr;</a>
-      </div>
+        <!-- Awards -->
+        <section id="awards">
+          <h2>Awards</h2>
+          <div class="award-list">
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>MCRepair++: Multi-Chunk Program Repair</h3>
-          <span class="project-date">2022–2024</span>
-        </div>
-        <p class="project-tags">Python &nbsp;·&nbsp; Java &nbsp;·&nbsp; PyTorch &nbsp;·&nbsp; CodeBERT</p>
-        <p>Fine-tuned CodeBERT with buggy block preprocessing and proportional patch combination for multi-chunk bugs. Fixed 79 bugs (31 multi-chunk) on Defects4J, improving 21–342% over TBar, CURE, and CoCoNut.</p>
-        <a href="https://github.com/Aslan7197" target="_blank" class="project-link">View on GitHub &rarr;</a>
-      </div>
+            <div class="award-item">
+              <a href="awards/KSCE2025.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KSCE2025.png" alt="Best Short Paper Award KCSE 2025" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name">Best Short Paper Award <span class="award-kr">· 우수단편논문상</span></p>
+                <p class="award-venue">KCSE 2025 — 한국 소프트웨어공학 학술대회</p>
+                <p class="award-paper">LLM 기반 다중 함수 프로그램 정정 (Patch Feedback &amp; Combination)</p>
+                <span class="award-date">January 2025</span>
+              </div>
+            </div>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Classification-Based Fault Localization</h3>
-          <span class="project-date">2025–Present</span>
-        </div>
-        <p class="project-tags">Python &nbsp;·&nbsp; GPT-4o &nbsp;·&nbsp; AST Parsing</p>
-        <p>Classifies issue descriptions into Full/Partial/Hint categories and routes to tailored symbol-level localization strategies. Achieves 74.6% file-path and 52.3% symbol-level accuracy on SWE-Bench Lite, outperforming Agentless and AutoCodeRover.</p>
-        <a href="https://github.com/Aslan7197" target="_blank" class="project-link">View on GitHub &rarr;</a>
-      </div>
-    </section>
+            <div class="award-item">
+              <a href="awards/KSC2023.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KSC2023.png" alt="Best Presentation Paper Award KCC 2023" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name">Best Presentation Paper Award <span class="award-kr">· 우수발표논문상</span></p>
+                <p class="award-venue">KCC 2023 — 한국컴퓨터종합학술대회</p>
+                <p class="award-paper">Improving Patch Optimization for Multi-Chunk Bugs in Automated Program Repair</p>
+                <span class="award-date">July 2023</span>
+              </div>
+            </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-links">
-        <div class="contact-item">
-          <strong>Email:</strong>
-          <a href="mailto:aslan@uos.ac.kr">aslan@uos.ac.kr</a>
-        </div>
-        <div class="contact-item">
-          <strong>Phone:</strong>
-          <a href="tel:+821095069707">+82 10-9506-9707</a>
-        </div>
-        <div class="contact-item">
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/aslan-abdinabiyev-b13965205/" target="_blank">Aslan Abdinabiev</a>
-        </div>
-        <div class="contact-item">
-          <strong>GitHub:</strong>
-          <a href="https://github.com/Aslan7197" target="_blank">Aslan7197</a>
-        </div>
-        <div class="contact-item">
-          <strong>Telegram:</strong>
-          <a href="https://t.me/aslan_7197" target="_blank">t.me/aslan_7197</a>
-        </div>
-      </div>
+            <div class="award-item">
+              <a href="awards/KCC2022.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KCC2022.png" alt="Best Presentation Paper Award KSC 2022" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name">Best Presentation Paper Award <span class="award-kr">· 우수발표논문상</span></p>
+                <p class="award-venue">KSC 2022 — 한국소프트웨어종합학술대회</p>
+                <p class="award-paper">멀티 청크 프로그램 정정을 위한 패치 최적화에 버기 블록 적용</p>
+                <span class="award-date">February 2023</span>
+              </div>
+            </div>
 
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-        <p id="form-success" class="form-success" hidden>Thank you! Your message has been received.</p>
-      </form>
-    </section>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2>Projects</h2>
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">01</span> Agent-Based APR with Dynamic Context</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2024 – Present</span>
+                  <span class="proj-chip">Under Review · IEEE Access</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/soft7197/dcsa4apr" target="_blank">GitHub</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>Java</span><span>GPT-4o</span><span>CodeBERT</span><span>FAISS</span><span>Docker</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>357</strong>
+                <span>Defects4J bugs fixed</span>
+              </div>
+              <div class="proj-metric">
+                <strong>87</strong>
+                <span>SWE-Bench Lite bugs fixed</span>
+              </div>
+              <div class="proj-metric">
+                <strong>+7.5%</strong>
+                <span>over SRepair (prior SOTA)</span>
+              </div>
+              <div class="proj-metric">
+                <strong>29.9%</strong>
+                <span>SWE-Bench fix rate</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Architecture</dt>
+              <dd>3-agent LLM loop — Context Updater (T=0.2) → Generator (T=0.7) → Overfitting Detector (T=0.3); all GPT-4o</dd>
+
+              <dt>Context tools</dt>
+              <dd>Coverage Runner · CodeBERT+FAISS Semantic Search · Code Extractor · Call Graph Builder · Field Dependency Analyzer · API Usage Finder</dd>
+
+              <dt>Repair scope</dt>
+              <dd>Single methods + multi-method (up to 10 functions) via connected component grouping by test coverage overlap</dd>
+
+              <dt>Java results</dt>
+              <dd>183 bugs on Defects4J v1.2 + 174 on v2.0; outperforms SRepair, ChatRepair, ThinkRepair</dd>
+
+              <dt>Python results</dt>
+              <dd>87 bugs on SWE-Bench Lite across 10 repos: astropy, django, sympy, scikit-learn, matplotlib, and 5 others</dd>
+            </dl>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">02</span> MCRepair++: Multi-Chunk Program Repair</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2022 – 2024</span>
+                  <span class="proj-chip">IEEE Access 2025</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/kimjisung78/MCRepair-Plus-Plus" target="_blank">GitHub</a>
+                <a href="https://doi.org/10.1109/ACCESS.2025.3541336" target="_blank">DOI</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>Java</span><span>CodeBERT</span><span>PyTorch</span><span>Defects4J</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>79 / 89</strong>
+                <span>bugs correctly fixed</span>
+              </div>
+              <div class="proj-metric">
+                <strong>331</strong>
+                <span>correct patches found</span>
+              </div>
+              <div class="proj-metric">
+                <strong>82,750</strong>
+                <span>compilable patches</span>
+              </div>
+              <div class="proj-metric">
+                <strong>21–342%</strong>
+                <span>over TBar / CURE / CoCoNut</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Key idea</dt>
+              <dd>Binds inter-dependent buggy chunks into one "Buggy Block" via method (M) and field (F) dependency analysis, then fine-tunes CodeBERT on the unified representation</dd>
+
+              <dt>MRL</dt>
+              <dd>Minimized Repaired Locations — excludes blank/comment/null lines unless tagged FAULT_OF_OMISSION, reducing noise in the patch search space</dd>
+
+              <dt>Patch optimization</dt>
+              <dd>(1) Filter: removes duplicates, syntax errors, and unrelated patches &nbsp;(2) Rank: rewards fewer edit actions using union denominator &nbsp;(3) Combine: proportional top-k across locations</dd>
+
+              <dt>Bug taxonomy</dt>
+              <dd>T1 single-chunk · T2 single-chunk multi-location · T3 multi-chunk — system specifically targets T3 (hardest category)</dd>
+
+              <dt>Projects</dt>
+              <dd>Chart (6) · Closure (21) · Lang (12) · Math (30) · Mockito (6) · Time (4)</dd>
+            </dl>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">03</span> Classification-Based Fault Localization</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2025 – Present</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/soft7197/cbfl" target="_blank">GitHub</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>GPT-4o</span><span>AST Parsing</span><span>SWE-Bench Lite</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>74.6%</strong>
+                <span>file-path accuracy</span>
+              </div>
+              <div class="proj-metric">
+                <strong>52.3%</strong>
+                <span>symbol-level accuracy</span>
+              </div>
+              <div class="proj-metric">
+                <strong>$0.05</strong>
+                <span>cost per issue</span>
+              </div>
+              <div class="proj-metric">
+                <strong>37.5%</strong>
+                <span>cheaper than Agentless</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Classification</dt>
+              <dd>FULL_LOCATION — direct AST index lookup, no LLM (~$0.01) · PARTIAL — one LLM reasoning call on symbol summaries (~$0.04) · HINT — iterative agent search up to 5 rounds (~$0.05)</dd>
+
+              <dt>Repo indexing</dt>
+              <dd>Python ast module builds full symbol index per file (functions, class elements, module symbols); 3-map file resolver (basename/suffix/module path) — no embeddings needed</dd>
+
+              <dt>PARTIAL handler</dt>
+              <dd>Constructs symbol summaries (80-line excerpt + inferred call graph) → GPT-4o labels each EDIT_LOCATION / SYMPTOM_ONLY / NOT_RELATED</dd>
+
+              <dt>HINT handler</dt>
+              <dd>Agent iterates over search_class / search_method / search_code APIs backed by in-memory AST index; file scores decay by discovery iteration (earlier = higher weight)</dd>
+
+              <dt>Budget</dt>
+              <dd>Hard limits of $0.50/issue and 3,000 s; gracefully degrades by disabling optional LLM steps as limits approach</dd>
+            </dl>
+
+            <table class="cmp-table">
+              <thead>
+                <tr><th>System</th><th>File Acc.</th><th>Symbol Acc.</th><th>Cost/Issue</th></tr>
+              </thead>
+              <tbody>
+                <tr class="ours"><td><strong>CBFL (ours)</strong></td><td><strong>74.6%</strong></td><td><strong>52.3%</strong></td><td><strong>$0.05</strong></td></tr>
+                <tr><td>Agentless</td><td>69.7%</td><td>50.3%</td><td>$0.08</td></tr>
+                <tr><td>AutoCodeRover</td><td>69.0%</td><td>49.7%</td><td>—</td></tr>
+                <tr><td>SWE-agent</td><td>58.0%</td><td>42.3%</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+          <h2>Publications</h2>
+          <p class="pub-note">
+            First-authored and co-authored works.
+            <a href="https://selab.uos.ac.kr/lab-achievements" target="_blank">Full lab list (121 papers) →</a>
+          </p>
+
+          <div class="pub-list">
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2026</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">Utilizing Dynamic Context and Static Analysis for Agent-Based Automated Program Repair</p>
+                <p class="pub-venue">IEEE Access — Under Review</p>
+                <div class="pub-chips">
+                  <span>First Author</span><span>357 Defects4J + 87 SWE-Bench bugs</span><span>+7.5% over SRepair</span>
+                </div>
+                <a href="https://github.com/soft7197/dcsa4apr" target="_blank" class="pub-link">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">Improving Patch Optimization with Buggy Block for Complex Program Repair</p>
+                <p class="pub-venue">IEEE Access, Vol. 13, pp. 30420–30443</p>
+                <div class="pub-chips">
+                  <span>Co-Author</span><span>79/89 bugs correctly repaired</span><span>21–342% over baselines</span>
+                </div>
+                <a href="https://doi.org/10.1109/ACCESS.2025.3541336" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">An Enhanced Patch Optimization Technique for Multi-Chunk Bugs in Automated Program Repair</p>
+                <p class="pub-venue">Journal of Information Processing Systems (JIPS), Vol. 20, No. 5, pp. 627–639</p>
+                <div class="pub-chips">
+                  <span>First Author</span><span>Multi-chunk APR</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dj">DJ</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">Improving Patch Optimization Quality in Multi-Chunk Program Repair</p>
+                <p class="pub-venue">KIISE Transactions on Computing Practices, Vol. 30, No. 8, pp. 354–361</p>
+                <div class="pub-chips">
+                  <span>First Author</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">Improving Patch Optimization for Multi-Chunk Bugs in Automated Program Repair</p>
+                <p class="pub-venue">한국컴퓨터종합학술대회 (KCC 2023)</p>
+                <div class="pub-chips"><span>First Author</span></div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title">Applying Template Approach to Learning based Program Repair</p>
+                <p class="pub-venue">한국소프트웨어종합학술대회 (KSC 2023)</p>
+                <div class="pub-chips"><span>First Author</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="pub-footer-links">
+            <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank">Google Scholar →</a>
+            &nbsp;·&nbsp;
+            <a href="https://selab.uos.ac.kr/lab-achievements" target="_blank">Lab achievements →</a>
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-item"><span>Email</span><a href="mailto:aslan@uos.ac.kr">aslan@uos.ac.kr</a></div>
+            <div class="contact-item"><span>Phone</span><a href="tel:+821095069707">+82 10-9506-9707</a></div>
+            <div class="contact-item"><span>Portfolio</span><a href="https://Aslan7197.github.io/resume" target="_blank">Aslan7197.github.io/resume</a></div>
+            <div class="contact-item"><span>Telegram</span><a href="https://t.me/aslan_7197" target="_blank">aslan_7197</a></div>
+            <div class="contact-item"><span>Scholar</span><a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en" target="_blank">Google Scholar</a></div>
+          </div>
+        </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Aslan Abdinabiev. Thank you for your interest!</p>
+    <p>&copy; 2026 Aslan Abdinabiev &nbsp;·&nbsp; Seoul, Korea</p>
+    <p><a href="files/Aslan_CV(2026.02.20).pdf" download>Download CV</a></p>
   </footer>
 
   <script src="script.js"></script>

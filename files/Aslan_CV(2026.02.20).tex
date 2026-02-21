@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Based on: Jake Gutierrez's template (https://github.com/jakegut/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aslan Abdinabiev} \\ \vspace{1pt}
+    \small (010) 9506-9707 $|$ \href{mailto:aslan@uos.ac.kr}{\underline{aslan@uos.ac.kr}} $|$
+    Seoul, Korea $|$
+    \href{https://github.com/Aslan7197}{\underline{github.com/Aslan7197}} $|$
+    \href{https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en}{\underline{Google Scholar}} $|$
+    \href{https://Aslan7197.github.io/resume}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    PhD candidate building tools that automatically find and fix bugs in code using large language models. My work has improved automated repair success rates by 37\% over existing methods. Currently in the thesis stage of my PhD (expected 2027). Open to part-time research, engineering, or development positions, with interest in transitioning to full-time after graduation.
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Seoul}{Seoul, Korea}
+      {PhD in Software Engineering}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Research focus: Automated Program Repair using Large Language Models}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Seoul}{Seoul, Korea}
+      {M.Sc. in Software Engineering}{2022 -- 2024}
+    \resumeSubheading
+      {National University of Uzbekistan}{Tashkent, Uzbekistan}
+      {B.Sc. in Information Technology}{2016 -- 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Student Researcher}{2022 -- Present}
+      {Software Engineering Laboratory, University of Seoul}{Seoul, Korea}
+      \resumeItemListStart
+        \resumeItem{Built automated program repair tools using both commercial (GPT-4o) and open-source LLMs (CodeBERT, CodeLlama, Qwen 2.5 32B) with RAG and static analysis}
+        \resumeItem{Designed agent-based architecture with dynamic context management, fixing 357 Java and 87 Python bugs across Defects4J and SWE-Bench Lite}
+        \resumeItem{Developed classification-based fault localization achieving 74.6\% file-path accuracy on SWE-Bench Lite}
+        \resumeItem{Published papers at JIPS journal, KCSE, and other conferences; co-authored paper in IEEE Access (\href{https://scholar.google.com/citations?user=W-YakaQAAAAJ&hl=en}{\underline{Google Scholar}})}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Agent-Based APR with Dynamic Context} $|$ \emph{Python, Java, GPT-4o, CodeBERT, FAISS} $|$ \href{https://github.com/soft7197/dcsa4apr}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Multi-agent system (Context Updater, Generator, Overfitting Detector) with dynamic context pool and six static analysis tools for iterative patch refinement}
+            \resumeItem{Fixed 357 bugs on Defects4J and 87 on SWE-Bench Lite, outperforming SRepair (+7.5\%), ChatRepair, and ThinkRepair}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MCRepair++: Multi-Chunk Program Repair} $|$ \emph{Python, Java, PyTorch, CodeBERT} $|$ \href{https://github.com/kimjisung78/MCRepair-Plus-Plus}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned CodeBERT with buggy block preprocessing and proportional patch combination for multi-chunk bugs}
+            \resumeItem{Fixed 79 bugs (31 multi-chunk) on Defects4J, improving 21--342\% over TBar, CURE, and CoCoNut}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Classification-Based Fault Localization} $|$ \emph{Python, GPT-4o, AST Parsing} $|$ \href{https://github.com/soft7197/cbfl}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Classifies issue descriptions into Full/Partial/Hint categories and routes to tailored symbol-level localization strategies}
+            \resumeItem{74.6\% file-path and 52.3\% symbol-level accuracy on SWE-Bench Lite, outperforming Agentless and AutoCodeRover}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI/ML}{: CodeBERT, GPT-3/4, CodeLlama, Qwen 2.5 32B, fine-tuning, prompt engineering, RAG, embedding-based retrieval} \\
+     \textbf{Languages}{: Python, Java, SQL, Bash, C\#} \\
+     \textbf{Frameworks \& Libraries}{: PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, FAISS} \\
+     \textbf{Tools}{: Git, Docker, Linux, OpenAI API, JavaParser, Defects4J, SWE-Bench}
+    }}
+ \end{itemize}
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     % TODO: Adjust CEFR levels to match your actual proficiency. Add test scores if available (IELTS, TOPIK, etc.)
+     English (Advanced, B2--C1) $|$ Korean (Elementary, A2) $|$ Russian (Intermediate, B1) $|$ Uzbek (Native)
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
